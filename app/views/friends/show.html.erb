@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<div class="jumbotron">
+    <h1 class="display-4">
+      <%= @friend.Nombre %>
+      <%= @friend.Apellidos %><br>
+    </h1> 
+    <h1 class="display-6">
+      <%= @friend.Celular %> 
+    </h1>
+    <p class="lead">
+      <%= @friend.email %> |
+      <%= @friend.Twitter %> 
+    </p>
+    <%= link_to 'Editar', edit_friend_path(@friend), class:"btn btn-secondary" %> 
+    <%= link_to 'Atras', friends_path, class:"btn btn-secondary" %>
+</div>
+
+
+
+
+
